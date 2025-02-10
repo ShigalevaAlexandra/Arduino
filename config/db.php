@@ -1,10 +1,12 @@
 <?php
 
+require_once('secret.php');
+
 return [
     'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=yii2basic',
-    'username' => 'root',
-    'password' => '',
+    'dsn' => 'mysql:host=localhost;dbname='.DB_NAME,
+    'username' => USERNAME,
+    'password' => PASSWORD,
     'charset' => 'utf8',
 
     // Schema cache options (for production environment)
